@@ -10,7 +10,7 @@ Lernmaterialien, die in der Mischok Academy für den Unterricht eingesetzt werde
 
 ## Themen
 
-[[Projekte/TicTacToe/User Story\|User Story]]
+[[Projekte/TicTacToe/user-story\|user-story]]
 
 ### Java
 - [[Themen/Java/printf\|printf]]
