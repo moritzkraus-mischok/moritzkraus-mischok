@@ -1,7 +1,7 @@
 [
 {
-		"title": "User Story",
-		"date":"Wed Apr 22 2026 11:54:15 GMT+0000 (Coordinated Universal Time)",
+		"title": "user-story",
+		"date":"Wed Apr 22 2026 12:01:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/projekte/tic-tac-toe/user-story/",
 		"content": "Als Gelegenheitsspieler möchte ich ein digitales Tic-Tac-Toe-Spiel gegen einen Freund am selben Computer spielen können, damit wir uns ohne Stift und Papier in einem kurzen strategischen Wettkampf messen können.\nAkzeptanzkriterien\nSpielfeld &amp; Darstellung\n\nDas Spiel zeigt ein 3x3-Raster (Grid) an.\nEs gibt eine klare Anzeige, welcher Spieler (X oder O) gerade am Zug ist.\n\nSpielmechanik\n\nSpieler können abwechselnd auf ein leeres Feld klicken, um ihr Symbol zu setzen.\nEin bereits besetztes Feld darf nicht überschrieben werden.\nDas System erkennt automatisch, wenn ein Spieler drei Symbole in einer Reihe (horizontal, vertikal oder diagonal) hat.\n\nSpielende &amp; Ergebnis\n\nSobald ein Spieler gewonnen hat, wird dies deutlich (z. B. durch eine Textmeldung &quot;Spieler X hat gewonnen!&quot;) angezeigt.\nWenn alle 9 Felder besetzt sind, ohne dass jemand drei in einer Reihe hat, wird das Spiel als Unentschieden gewertet.\nNach Spielende muss es eine Möglichkeit geben, das Spielfeld zurückzusetzen (Reset-Button), um eine neue Runde zu starten.\n\nValidierung\n\nEingaben nach Spielende (wenn bereits ein Sieger feststeht) werden ignoriert, bis das Spiel neu gestartet wird.\n\nBonus (Optionale &quot;Stretch Goals&quot;)\n\nVisuelles Feedback: Die gewinnende Dreierreihe wird farblich hervorgehoben.\nScoreboard: Ein Zähler hält fest, wie viele Runden Spieler X und Spieler O jeweils gewonnen haben.",
 		"tags": [ "note"]
@@ -9,9 +9,9 @@
 
 {
 		"title": "README",
-		"date":"Wed Apr 22 2026 11:54:15 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Apr 22 2026 12:01:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
-		"content": "Lernmaterial\nLernmaterialien, die in der Mischok Academy für den Unterricht eingesetzt werden.\nThemen\n<a class=\"internal-link\" target=\"\" data-note-icon=\"undefined\" href=\"/projekte/tic-tac-toe/user-story/\">User Story</a>\nJava\n\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">printf</a>\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Try-Catch</a>",
+		"content": "Lernmaterial\nLernmaterialien, die in der Mischok Academy für den Unterricht eingesetzt werden.\nThemen\n<a class=\"internal-link\" target=\"\" data-note-icon=\"undefined\" href=\"/projekte/tic-tac-toe/user-story/\">user-story</a>\nJava\n\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">printf</a>\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Try-Catch</a>",
 		"tags": [ "note","gardenEntry"]
 }
 ]
