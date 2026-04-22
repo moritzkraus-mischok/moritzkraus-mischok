@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>README</title>
+<title>User Story</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,16 +36,38 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="lernmaterial" tabindex="-1">Lernmaterial</h1>
-<p>Lernmaterialien, die in der Mischok Academy für den Unterricht eingesetzt werden.</p>
-<h2 id="themen" tabindex="-1">Themen</h2>
-<p><a class="internal-link" target="" data-note-icon="undefined" href="/projekte/tic-tac-toe/user-story/">User Story</a></p>
-<h3 id="java" tabindex="-1">Java</h3>
+<p><strong>Als</strong> Gelegenheitsspieler <strong>möchte ich</strong> ein digitales Tic-Tac-Toe-Spiel gegen einen Freund am selben Computer spielen können, <strong>damit</strong> wir uns ohne Stift und Papier in einem kurzen strategischen Wettkampf messen können.</p>
+<h2 id="akzeptanzkriterien" tabindex="-1">Akzeptanzkriterien</h2>
+<h3 id="spielfeld-and-amp-darstellung" tabindex="-1">Spielfeld &amp; Darstellung</h3>
 <ul>
-<li><a class="internal-link is-unresolved" href="/404" target="">printf</a></li>
-<li><a class="internal-link is-unresolved" href="/404" target="">Try-Catch</a></li>
+<li>Das Spiel zeigt ein <strong>3x3-Raster</strong> (Grid) an.</li>
+<li>Es gibt eine klare Anzeige, welcher Spieler (<strong>X oder O</strong>) gerade am Zug ist.</li>
+</ul>
+<h3 id="spielmechanik" tabindex="-1">Spielmechanik</h3>
+<ul>
+<li>Spieler können abwechselnd auf ein leeres Feld klicken, um ihr Symbol zu setzen.</li>
+<li>Ein bereits besetztes Feld darf <strong>nicht</strong> überschrieben werden.</li>
+<li>Das System erkennt automatisch, wenn ein Spieler <strong>drei Symbole</strong> in einer Reihe (horizontal, vertikal oder diagonal) hat.</li>
+</ul>
+<h3 id="spielende-and-amp-ergebnis" tabindex="-1">Spielende &amp; Ergebnis</h3>
+<ul>
+<li>Sobald ein Spieler gewonnen hat, wird dies deutlich (z. B. durch eine Textmeldung &quot;Spieler X hat gewonnen!&quot;) angezeigt.</li>
+<li>Wenn alle 9 Felder besetzt sind, ohne dass jemand drei in einer Reihe hat, wird das Spiel als <strong>Unentschieden</strong> gewertet.</li>
+<li>Nach Spielende muss es eine Möglichkeit geben, das Spielfeld zurückzusetzen (<strong>Reset-Button</strong>), um eine neue Runde zu starten.</li>
+</ul>
+<h3 id="validierung" tabindex="-1">Validierung</h3>
+<ul>
+<li>Eingaben nach Spielende (wenn bereits ein Sieger feststeht) werden ignoriert, bis das Spiel neu gestartet wird.</li>
+</ul>
+<h2 id="bonus-optionale-and-quot-stretch-goals-and-quot" tabindex="-1">Bonus (Optionale &quot;Stretch Goals&quot;)</h2>
+<ul>
+<li><em>Visuelles Feedback:</em> Die gewinnende Dreierreihe wird farblich hervorgehoben.</li>
+<li><em>Scoreboard:</em> Ein Zähler hält fest, wie viele Runden Spieler X und Spieler O jeweils gewonnen haben.</li>
 </ul>
 </main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>
